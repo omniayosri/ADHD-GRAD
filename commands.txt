@@ -1,0 +1,5 @@
+curl -X POST -d "client_id=yjX4klNLOqDQb0CLnC6bAzeyeP9Yzn8K8qH55yxO&client_secret=NNFb3GhyypgVgRlQLjWJicrMonQa9ZkCoRLQqkFSHJBH6x2NONicyr8uFIPVFfrBLhtdtVfG5hXvhz7mh7ttKGiidlBt3bt9qIQkmBdLbRFiA6ESaYstPn3ERGxUFcbp&grant_type=password&username=admin&password=123" http://localhost:8000/auth/token/
+
+
+
+{"access_token":"AIoBk81FQn05vxfGHIeQFXaRSivQN4","expires_in":36000,"token_type":"Bearer","scope":"read write","refresh_token":"3z8XICbHPG6Mbrkb1CbwHH0bHsI0mB"}

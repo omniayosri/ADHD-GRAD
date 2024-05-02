@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "bc4d0bb9-4d8e-478e-a4e0-dd44f899b1ff",
+		"name": "Doctor-Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27558297"
+	},
+	"item": [
+		{
+			"name": "Doctor Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "specialize",
+							"value": "Boons",
+							"type": "text"
+						},
+						{
+							"key": "contact",
+							"value": "015245245",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Cairo",
+							"type": "text"
+						},
+						{
+							"key": "experiance",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "1970-2-10",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "moha",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "moha@moha.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "As123456789",
+							"type": "text"
+						},
+						{
+							"key": "password2",
+							"value": "As123456789",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Ahmed/Downloads/user.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/doctor/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"doctor",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve a Doctor",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer LX0dN0GOwrJCQ3Ri3a5A9v7X2K4kvO",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/doctor/retrieve/dedo@desdfdo.com/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"doctor",
+						"retrieve",
+						"dedo@desdfdo.com",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Doctor",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer clcvy9ojMYt8Jzj6e7MOklrQPnOnWW",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/doctor/delete/moha@moha.com/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"doctor",
+						"delete",
+						"moha@moha.com",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Doctor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer w7mAdXjj2GJYmAWU74A3muGzq1fryq",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "dedo",
+							"type": "text"
+						},
+						{
+							"key": "experiance",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/doctor/update/dedo@dedo.com/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"doctor",
+						"update",
+						"dedo@dedo.com",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all the Doctors",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer w7mAdXjj2GJYmAWU74A3muGzq1fryq",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/doctor/list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"doctor",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Time Slot",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer rHUd93hRfjahi15zNEolqiUCWJGQsr",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "doctor",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "2025-9-25T10:30 PM",
+							"type": "text"
+						},
+						{
+							"key": "end_time",
+							"value": "2025-9-25T11:30 PM",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/doctor/create-time-slot/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"doctor",
+						"create-time-slot",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Appointment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer uUfON8SJsPZ6IFS7dyRzB7Maj6uq6J",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "doctor",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "patient",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "date_time",
+							"value": "2032-09-25T10:30 PM",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/doctor/create-appointment/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"doctor",
+						"create-appointment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Doctor Appointments",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer WVvKBmXOE61iLmhHP95AKHReGhuiY5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/doctor/list-appointment/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"doctor",
+						"list-appointment",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

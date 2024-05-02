@@ -1,0 +1,1245 @@
+{
+	"info": {
+		"_postman_id": "772d891a-c8d3-4db8-aef4-ba1df05fde96",
+		"name": "Patient-Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27558297"
+	},
+	"item": [
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "patient",
+							"value": "ali",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Hello from request 2",
+							"type": "text"
+						},
+						{
+							"key": "purpose",
+							"value": "Hello from request",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Hello from request",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "10:00:00",
+							"type": "text"
+						},
+						{
+							"key": "end_time",
+							"value": "10:00:00",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "HG",
+							"type": "text"
+						},
+						{
+							"key": "reminder",
+							"value": "True",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/create/task/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"create",
+						"task",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response of Create Task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ChjL8v2zE1vFHCttibDpJV75d7ISRI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "patient",
+									"value": "ali",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Hello from request",
+									"type": "text"
+								},
+								{
+									"key": "purpose",
+									"value": "Hello from request",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Hello from request",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "10:00:00",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "10:00:00",
+									"type": "text"
+								},
+								{
+									"key": "priority",
+									"value": "HG",
+									"type": "text"
+								},
+								{
+									"key": "reminder",
+									"value": "True",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/patient/create/task/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"patient",
+								"create",
+								"task",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 13 Feb 2024 19:03:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "190"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"patient\": \"ali\",\n    \"title\": \"Hello from request\",\n    \"purpose\": \"Hello from request\",\n    \"start_time\": \"10:00:00\",\n    \"end_time\": \"10:00:00\",\n    \"priority\": \"HG\",\n    \"description\": \"Hello from request\",\n    \"reminder\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "List Tasks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/list/task/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"list",
+						"task",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response of List Tasks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ChjL8v2zE1vFHCttibDpJV75d7ISRI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/patient/list/task/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"patient",
+								"list",
+								"task",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 13 Feb 2024 19:20:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "583"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"patient\": \"ali\",\n        \"title\": \"Hey from custom admin\",\n        \"purpose\": \"Hey from custom admin\",\n        \"start_time\": \"16:41:44\",\n        \"end_time\": \"16:41:47\",\n        \"priority\": \"MD\",\n        \"description\": \"Hey from custom admin\",\n        \"reminder\": true\n    },\n    {\n        \"patient\": \"ali\",\n        \"title\": \"Hello from request\",\n        \"purpose\": \"Hello from request\",\n        \"start_time\": \"10:00:00\",\n        \"end_time\": \"10:00:00\",\n        \"priority\": \"HG\",\n        \"description\": \"Hello from request\",\n        \"reminder\": true\n    },\n    {\n        \"patient\": \"ali\",\n        \"title\": \"Hello from request\",\n        \"purpose\": \"Hello from request\",\n        \"start_time\": \"10:00:00\",\n        \"end_time\": \"10:00:00\",\n        \"priority\": \"HG\",\n        \"description\": \"Hello from request\",\n        \"reminder\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Edited title",
+							"type": "text"
+						},
+						{
+							"key": "patient",
+							"value": "ali",
+							"type": "text"
+						},
+						{
+							"key": "reminder",
+							"value": "False",
+							"type": "text"
+						},
+						{
+							"key": "purpose",
+							"value": "Edited title",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Edited title",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "19:00:00",
+							"type": "text"
+						},
+						{
+							"key": "end_time",
+							"value": "19:00:00",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "LW",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/update/task/8/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"update",
+						"task",
+						"8",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response of Update Task",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Edited title",
+									"type": "text"
+								},
+								{
+									"key": "patient",
+									"value": "ali",
+									"type": "text"
+								},
+								{
+									"key": "reminder",
+									"value": "False",
+									"type": "text"
+								},
+								{
+									"key": "purpose",
+									"value": "Edited title",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Edited title",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "19:00:00",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "19:00:00",
+									"type": "text"
+								},
+								{
+									"key": "priority",
+									"value": "LW",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/patient/update/task/8/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"patient",
+								"update",
+								"task",
+								"8",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 14 Feb 2024 00:01:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"patient\": \"ali\",\n    \"title\": \"Edited title\",\n    \"purpose\": \"Edited title\",\n    \"start_time\": \"19:00:00\",\n    \"end_time\": \"19:00:00\",\n    \"priority\": \"LW\",\n    \"description\": \"Edited title\",\n    \"reminder\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Retrieve Task",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/retrieve/task/8/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"retrieve",
+						"task",
+						"8",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response of Retrieve Task",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/patient/retrieve/task/8/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"patient",
+								"retrieve",
+								"task",
+								"8",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 14 Feb 2024 00:03:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"patient\": \"ali\",\n    \"title\": \"Edited title\",\n    \"purpose\": \"Edited title\",\n    \"start_time\": \"19:00:00\",\n    \"end_time\": \"19:00:00\",\n    \"priority\": \"LW\",\n    \"description\": \"Edited title\",\n    \"reminder\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/delete/task/7/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"delete",
+						"task",
+						"7",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response of Delete Task",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/patient/delete/task/7/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"patient",
+								"delete",
+								"task",
+								"7",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 14 Feb 2024 00:06:23 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Search for Task",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/search/task/?q=hey",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"search",
+						"task",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "hey"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response of Search for Task",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/patient/search/task/?q=hey",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"patient",
+								"search",
+								"task",
+								""
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "hey"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 14 Feb 2024 00:21:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "201"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"patient\": \"ali\",\n        \"title\": \"Hey from custom admin\",\n        \"purpose\": \"Hey from custom admin\",\n        \"start_time\": \"16:41:44\",\n        \"end_time\": \"16:41:47\",\n        \"priority\": \"MD\",\n        \"description\": \"Hey from custom admin\",\n        \"reminder\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Favorites",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/fav/task/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"fav",
+						"task",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response for Get Favorites",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/patient/fav/task/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"patient",
+								"fav",
+								"task",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 14 Feb 2024 00:41:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "201"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"patient\": \"ali\",\n        \"title\": \"Hey from custom admin\",\n        \"purpose\": \"Hey from custom admin\",\n        \"start_time\": \"16:41:44\",\n        \"end_time\": \"16:41:47\",\n        \"priority\": \"MD\",\n        \"description\": \"Hey from custom admin\",\n        \"reminder\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Hidden",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/hidden/task/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"hidden",
+						"task",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response for Get Hidden",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/patient/hidden/task/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"patient",
+								"hidden",
+								"task",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 14 Feb 2024 00:42:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "192"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"patient\": \"ali\",\n        \"title\": \"Hello from request\",\n        \"purpose\": \"Hello from request\",\n        \"start_time\": \"10:00:00\",\n        \"end_time\": \"10:00:00\",\n        \"priority\": \"HG\",\n        \"description\": \"Hello from request\",\n        \"reminder\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Trash",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/trash/task/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"trash",
+						"task",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response for Get Trash",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer VIER0LDH1iptqBEXd6BIMy0RWhZMIo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/patient/trash/task/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"patient",
+								"trash",
+								"task",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 14 Feb 2024 00:43:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "192"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"patient\": \"ali\",\n        \"title\": \"Hello from request\",\n        \"purpose\": \"Hello from request\",\n        \"start_time\": \"10:00:00\",\n        \"end_time\": \"10:00:00\",\n        \"priority\": \"HG\",\n        \"description\": \"Hello from request\",\n        \"reminder\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "List Patients",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BWl3vvsr06uqh43Wqhf6LYBq5Bb2mc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/list-patients/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"list-patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Patient Appointments",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 5yAdHyYTKBPMuDKnNYR2GBfythf0Sj",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/patient/list-appointment/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"patient",
+						"list-appointment",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
